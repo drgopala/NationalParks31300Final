@@ -1,0 +1,70 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+}
+
+.carousel-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: rgb(255 237 213);
+  border-radius: 1rem;
+}
+
+nav {
+  background-color: rgb(194 65 12);
+  padding: 25px;
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 16px;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a:hover {
+  color: #e5e5e5;
+}
+
+/* Hamburger Button */
+nav button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+  display: none; /* Hidden by default */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  nav button {
+    display: block; /* Show the hamburger button */
+  }
+
+  nav ul {
+    display: none; /* Hide menu by default */
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(194 65 12);
+    
+  }
+
+  nav.isOpen ul {
+    display: flex;
+  }
+}
+
