@@ -1,11 +1,26 @@
 # NationalParks31300Final
 
-This is a React-based web application that showcases national parks. The project features a carousel of images, modals for more information, and an accordion for additional park details. The website is designed to be responsive and user-friendly, using Tailwind CSS for styling.
-
 ## Getting Started
 
 To run the project locally, follow these steps:
 
 ### 1. Clone/Download this repository
 
+### 2. Open a Folder and run this command
 
+### npx create-react-app nationalparks
+
+### 3. Then enter the newly created directory
+
+### cd nationalparks
+
+### 4. Install dependancies
+
+### npm install react-router-dom
+### npm install npm install tailwindcss postcss autoprefixer
+### npx tailwind init -p 
+### npm install react-tooltip  
+
+## 5. Run Devolpment Server on http://localhost:3000
+
+### npm start
